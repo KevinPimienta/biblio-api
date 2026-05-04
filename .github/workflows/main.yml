@@ -1,0 +1,28 @@
+name: Hola
+
+on:
+  workflow_dispatch: #ejecucion manual
+  push:
+    branches:
+      - main
+    paths:
+      - 'BibliotecaAPI/**'
+      - 'BibliotecaAPITest//**'
+      - '.github/workflows/maim.yml'
+  pull_request:
+    branches:
+      - main
+jobs:
+  saludar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Muestra hola
+        run: echo "holis"
+
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+
+      - name: Listar archivos
+        run:  |
+          echo "El repositorio ${{ github.repository }} contiene los siguientes archvios:"
+          tree
