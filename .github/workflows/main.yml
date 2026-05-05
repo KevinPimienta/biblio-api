@@ -8,7 +8,7 @@ on:
     paths:
       - 'BibliotecaAPI/**'
       - 'BibliotecaAPITest//**'
-      - '.github/workflows/maim.yml'
+      - '.github/workflows/main.yml'
   pull_request:
     branches:
       - main
