@@ -2,16 +2,16 @@ name: Hola
 
 on:
   workflow_dispatch: #ejecucion manual
-  push:
-    branches:
-      - main
-    paths:
-      - 'BibliotecaAPI/**'
-      - 'BibliotecaAPITest//**'
-      - '.github/workflows/main.yml'
-  pull_request:
-    branches:
-      - main
+#  push:
+#    branches:
+#      - main
+#    paths:
+#      - 'BibliotecaAPI/**'
+#      - 'BibliotecaAPITest//**'
+#      - '.github/workflows/main.yml'
+#  pull_request:
+#    branches:
+#      - main
 jobs:
   saludar:
     runs-on: ubuntu-latest
